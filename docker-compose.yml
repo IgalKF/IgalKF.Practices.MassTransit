@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  masstransitserver.com:
+    image: ${DOCKER_REGISTRY-}masstransitserver
+    build:
+      context: .
+      dockerfile: IgalKF.Practices.MassTransit.ConsoleApplication/Dockerfile
+    ports:
+      - 8013:80
+      - 8813:443
+    depends_on:
+      - mssql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+  masstransitapi.com:
+    image: ${DOCKER_REGISTRY-}masstransitapi
+    build:
+      context: .
+      dockerfile: IgalKF.Practices.MassTransit.WebApiApplication/Dockerfile
+    ports:
+      - 8014:80
+      - 8814:443
+    depends_on:
+      - mssql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: ${DOCKER_REGISTRY-}rabbitmq2
+    ports:
+        - 5673:5672
+        - 15673:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ${DOCKER_REGISTRY-}mssql2
+    ports:
+      - 1435:1433
+    volumes:
+      - ~/apps/mssql/data:/var/lib/mssqlql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Q!w2e3r4

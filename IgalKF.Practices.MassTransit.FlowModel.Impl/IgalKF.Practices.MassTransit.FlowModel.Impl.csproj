@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IgalKF.Practices.MassTransit.MessagingModel\IgalKF.Practices.MassTransit.MessagingModel.csproj" />
+    <ProjectReference Include="..\IgalKF.Practices.MassTransit.PersistenceModel.EntityFramework\IgalKF.Practices.MassTransit.PersistenceModel.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>

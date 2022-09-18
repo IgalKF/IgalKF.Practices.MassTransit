@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{802055CB-DD51-474A-A532-A4055010E92F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.MassTransit.MessagingModel", "IgalKF.Practices.MassTransit.MessagingModel\IgalKF.Practices.MassTransit.MessagingModel.csproj", "{17CCD503-1B5A-4FBD-8A9E-F28BE3B088EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.MassTransit.FlowModel.Impl", "IgalKF.Practices.MassTransit.FlowModel.Impl\IgalKF.Practices.MassTransit.FlowModel.Impl.csproj", "{4DD41CED-B722-469B-A991-BA9494097DE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.MassTransit.PersistenceModel.EntityFramework", "IgalKF.Practices.MassTransit.PersistenceModel.EntityFramework\IgalKF.Practices.MassTransit.PersistenceModel.EntityFramework.csproj", "{CEB4F2AE-0DCD-478F-B7DC-B30CEC14809E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.MassTransit.WebApiApplication", "IgalKF.Practices.MassTransit.WebApiApplication\IgalKF.Practices.MassTransit.WebApiApplication.csproj", "{4B69C0F6-9500-46C1-851D-D61C3F6D2B4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.MassTransit.ConsoleApplication", "IgalKF.Practices.MassTransit.ConsoleApplication\IgalKF.Practices.MassTransit.ConsoleApplication.csproj", "{C6119F52-573F-4D76-BBE2-B45791E9B7FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgalKF.Practices.MassTransit.EntityModel", "Igalkf.Practices.MassTransit.EntityModel\IgalKF.Practices.MassTransit.EntityModel.csproj", "{BBDB6BD0-0E56-4EA2-B19F-90EE6E70914A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgalKF.Practices.Masstransit.DatabaseModel", "Igalkf.Practices.Masstransit.DatabaseModel\IgalKF.Practices.Masstransit.DatabaseModel.csproj", "{A1647B1E-D21B-4407-9722-2E74FCF0F8A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{802055CB-DD51-474A-A532-A4055010E92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802055CB-DD51-474A-A532-A4055010E92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802055CB-DD51-474A-A532-A4055010E92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802055CB-DD51-474A-A532-A4055010E92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CCD503-1B5A-4FBD-8A9E-F28BE3B088EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CCD503-1B5A-4FBD-8A9E-F28BE3B088EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CCD503-1B5A-4FBD-8A9E-F28BE3B088EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CCD503-1B5A-4FBD-8A9E-F28BE3B088EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD41CED-B722-469B-A991-BA9494097DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD41CED-B722-469B-A991-BA9494097DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD41CED-B722-469B-A991-BA9494097DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD41CED-B722-469B-A991-BA9494097DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB4F2AE-0DCD-478F-B7DC-B30CEC14809E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB4F2AE-0DCD-478F-B7DC-B30CEC14809E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB4F2AE-0DCD-478F-B7DC-B30CEC14809E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB4F2AE-0DCD-478F-B7DC-B30CEC14809E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B69C0F6-9500-46C1-851D-D61C3F6D2B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B69C0F6-9500-46C1-851D-D61C3F6D2B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B69C0F6-9500-46C1-851D-D61C3F6D2B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B69C0F6-9500-46C1-851D-D61C3F6D2B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6119F52-573F-4D76-BBE2-B45791E9B7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6119F52-573F-4D76-BBE2-B45791E9B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6119F52-573F-4D76-BBE2-B45791E9B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6119F52-573F-4D76-BBE2-B45791E9B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDB6BD0-0E56-4EA2-B19F-90EE6E70914A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDB6BD0-0E56-4EA2-B19F-90EE6E70914A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDB6BD0-0E56-4EA2-B19F-90EE6E70914A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDB6BD0-0E56-4EA2-B19F-90EE6E70914A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1647B1E-D21B-4407-9722-2E74FCF0F8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1647B1E-D21B-4407-9722-2E74FCF0F8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1647B1E-D21B-4407-9722-2E74FCF0F8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1647B1E-D21B-4407-9722-2E74FCF0F8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {038A87A2-DA7A-41EB-9B3F-2FC134943B66}
+	EndGlobalSection
+EndGlobal
